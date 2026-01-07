@@ -8,3 +8,5 @@ const useProduct = () => {
   }
   return ctx;
 };
+
+export { useProduct };

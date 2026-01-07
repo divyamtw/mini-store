@@ -1,9 +1,15 @@
-import React from 'react'
+import { ProductProvider } from "./context/product/index.js";
+import AppRoutes from "./routes/AppRoutes.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className='bg-slate-900 h-screen text-white text-9xl font-mono'>App</div>
-  )
-}
+    <BrowserRouter>
+      <ProductProvider>
+        <AppRoutes />
+      </ProductProvider>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
